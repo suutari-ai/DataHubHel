@@ -11,7 +11,7 @@ const userManagerConfig = {
   client_id: '332114',
   redirect_uri: `${baseUrl}/login-callback`,
   response_type: 'id_token token',
-  scope: 'openid profile',
+  scope: 'openid email profile',
   silent_redirect_uri: `${baseUrl}/login-silent-renew`,
   automaticSilentRenew: true,
   filterProtocolClaims: true,
