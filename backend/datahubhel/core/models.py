@@ -16,8 +16,6 @@ class Thing(EntityBase):
 
 
 class Sensor(TimestampedUUIDModel):
-    thing = models.ForeignKey(Thing, on_delete=models.PROTECT)
-    sensor_id = models.CharField(max_length=60, unique=True)
     name = models.CharField(max_length=60)
     description = models.TextField(blank=True)
 

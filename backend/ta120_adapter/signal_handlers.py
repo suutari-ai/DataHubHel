@@ -10,6 +10,7 @@ def add_ta120sensor_datastreams(
         instance: TA120Sensor,
         **kwargs: object,
 ):
+    # TODO: Update this
     sensor = instance
     for (key, prop) in DATA_PROPERTIES.items():
         sensor.datastreams.get_or_create(
